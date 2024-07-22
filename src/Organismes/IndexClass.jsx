@@ -1,7 +1,7 @@
 import React from "react";
+import EChartComponent from "../componets/LineChart/LineChart";
 import Barometer from "../componets/Barometro/Barometer";
- import Temp from "../componets/Temperature/Temp";
- import '../App.css'
+import Temp from "../componets/Temperature/Temp";
 
 let incoming = {
   date: 1597107474849,
@@ -92,9 +92,11 @@ export default class IndexClass extends React.Component {
         <div className="dials">
           <Barometer id="dial9" value={this.state.baro} title="Barometer" />
           <Temp id="dial7" value={this.state.templ} title="Lowest Temp" />
-          <Temp id="dial8" value={this.state.temph} title="Highest Temp" />
         </div>
-         
+        <div className="dials">
+        <Temp id="dial8" value={this.state.temph} title="Highest Temp" />
+        <EChartComponent/>
+        </div>
       </div>
     );
   }

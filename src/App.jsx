@@ -1,9 +1,5 @@
- 
 import './App.css'
 import IndexClass from './Organismes/IndexClass'
- 
-
- 
 
 function App() {
  
