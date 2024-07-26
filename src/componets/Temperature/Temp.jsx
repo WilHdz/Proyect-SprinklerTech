@@ -4,15 +4,15 @@ import Thermometer from "react-thermometer-component";
 const styles = {
   dial: {
     display: "inline-block",
-    width: `300px`,
+    width: `180px`,
     height: `auto`,
-    color: "#000",
+    color: "white",
     border: "0.5px solid #fff",
     padding: "2px"
   },
   title: {
     fontSize: "1em",
-    color: "#000",
+    color: "white", 
     marginTop: "15px"
   }
 };
@@ -23,7 +23,7 @@ const Temp = ({ id, value, title }) => {
       <Thermometer
         theme="light"
         value={value}
-        max="4095" // Ajusta según el rango de tu dato
+        max="4095"  
         steps="1"
         format="°C"
         size="normal"

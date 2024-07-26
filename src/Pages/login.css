@@ -92,3 +92,7 @@ input {
     align-items: center;
     font-size: 24px;
 }
+
+h6,h2{
+    font-family: "Arial";
+}

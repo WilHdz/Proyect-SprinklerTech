@@ -1,0 +1,37 @@
+chart-container {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.796);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#main2 {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    padding: 5px;
+    margin: 0 auto; 
+    background: rgba(255, 255, 255, 0.806); 
+    box-sizing: border-box; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 1024px) {
+    #main2 {
+      height: 400px;  
+      padding: 5px;  
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #main2 {
+      height: 300px;  
+      padding: 5px; 
+    }
+  }
+  

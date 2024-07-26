@@ -1,42 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.Main-component-data {
+  background-image: url(../src/img/principal.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
 .App {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  width: 100%;
+  height: 100%;  
+  padding: 10px;
+  color: white;
+  overflow: hidden;  
 }
 
 .dials {
   font-family: sans-serif;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.dials label {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap:100px;
-}
-
-.App .title {
-  margin: 40px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.thermometer {
-  margin: 0 auto;
+  gap: 5px;
 }
 
 .slider {
- 
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 15px;
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 
@@ -56,4 +79,42 @@
   border-radius: 50%;
   background: #3f5c8c;
   cursor: pointer;
+}
+
+ 
+@media (min-width: 1024px) {
+  .App {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .dials {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+  .App {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dials {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dials {
+    gap: 10px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
 }

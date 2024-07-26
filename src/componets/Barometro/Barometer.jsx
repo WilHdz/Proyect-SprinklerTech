@@ -3,9 +3,9 @@ import { Chart } from "react-google-charts";
 
 const styles = {
   dial: {
-    width: `auto`,
-    height: `auto`,
-    color: "#000",
+    width: `150px`,
+    height: `150px`,
+    color: "white",
     border: "0.5px solid #fff",
     padding: "2px"
   },
@@ -28,12 +28,12 @@ const Barometer = ({ id, value, title }) => {
         ]}
         options={{
           redFrom: 90,
-          redTo: 100, // Ajusta según el rango de tu dato
+          redTo: 100,  
           yellowFrom: 50,
           yellowTo: 90,
           minorTicks: 5,
           min: 0,
-          max: 100 // Ajusta según el rango de tu dato
+          max: 100  
         }}
       />
     </div>
